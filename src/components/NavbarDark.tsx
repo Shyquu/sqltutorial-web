@@ -7,7 +7,7 @@ function NavbarDark() {
     return (
         <Navbar variant="dark" bg="dark" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#home">SQL Tutorial</Navbar.Brand>
+                <Navbar.Brand href="/">SQL Tutorial 🦅</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-dark" />
                 <Navbar.Collapse id="navbar-dark-example">
                     <Nav>
@@ -31,6 +31,17 @@ function NavbarDark() {
                             <NavDropdown.Item href="task?no=3">Übung 3</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="tasks">Übungen-Übersicht</NavDropdown.Item>
+                        </NavDropdown>
+
+                        <NavDropdown
+                            id="nav-dropdown-utils"
+                            title="Utils"
+                            menuVariant="dark">
+                            <NavDropdown.Item href="addtask">Übung hinzufügen</NavDropdown.Item>
+                            <NavDropdown.Item href="addlection">Lektion hinzufügen</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="tasks">Übungen-Übersicht</NavDropdown.Item>
+                            <NavDropdown.Item href="lessons">Lektionen-Übersicht</NavDropdown.Item>
                         </NavDropdown>
 
                     </Nav>
