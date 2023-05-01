@@ -6,6 +6,7 @@ import {
     RouterProvider,
 } from "react-router-dom"
 import {AddTask} from "./components/AddTask";
+import {Test} from "./components/Test";
 
 const router = createBrowserRouter([
     {

@@ -1,24 +1,21 @@
-import {InputGroup} from "react-bootstrap";
-import Form from 'react-bootstrap/Form';
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {InputGroup} from "react-bootstrap";
+import {Form} from "react-bootstrap";
 
-export function AddTask() {
-
-    // https://youtu.be/fPuLnzSjPLE?t=1540
-
+export const Test = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(()=> {
         const fetchAllBooks = async  () => {
             try {
                 const res = await axios.get("http://localhost:8800/books")
-                setBooks(res.data)
+                console.log(res)
             } catch (err) {
                 console.log(err)
             }
         }
-        fetchAllBooks()
+        fetchAllBooks();
     }, [])
 
     return (
