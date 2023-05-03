@@ -7,6 +7,8 @@ import {
 } from "react-router-dom"
 import {AddTask} from "./components/AddTask";
 import {Test} from "./components/Test";
+import AddLection from "./components/AddLection";
+import "./style.css"
 
 const router = createBrowserRouter([
     {
@@ -85,7 +87,7 @@ const router = createBrowserRouter([
         path: "addlection",
         element: (
             <div>
-                <AddTask/>
+                <AddLection/>
             </div>)
     },
 ])

@@ -1,6 +1,7 @@
 import Form from "react-bootstrap/Form";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
+import {Card} from "react-bootstrap";
 
 export function LectionBox() {
 
@@ -26,10 +27,16 @@ export function LectionBox() {
             {/* In der Query URL die Lektionsnummer übergeben und danach abgleichen welche Lektionsabschnitte mit der korrespondierenden Lektionsnummer ausgegeben 
             werden soll und als Header die Lektionsnummer benutzen */}
             {lections.map((lection)=> (
-            <Form>
-                <Form.Label htmlFor={"lection"+lection.lection_id}>{lection.name}</Form.Label>
-                <Form.Text>{lection.text}</Form.Text>
-            </Form>
+                <div key={lection.lection_id}>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Header>{lection.lection_name}</Card.Header>
+                        <Card.Body>
+                            <Card.Text>
+                                {lection.lection_text}
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </div>
             ))}
         </>
     );
