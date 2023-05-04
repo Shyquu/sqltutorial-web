@@ -6,6 +6,13 @@
     justify-content: center;
 }
 
+.allTasks{
+    height: 50vh;
+    padding: 20px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
 .addLectionDesktop{
     height: 100vh;
     padding: 50px 300px;

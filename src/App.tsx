@@ -11,9 +11,9 @@ import "./style.css"
 
 const router = createBrowserRouter([
     {
-        path: "/task",
+        path: "/sqltutorial-web",
         element: (
-            <div>
+            <div className={"allTasks"}>
                 <Accordion defaultActiveKey={"0"}>
                     <Accordion.Item eventKey={"0"}>
                         <Accordion.Header>Aufgabe 1</Accordion.Header>
