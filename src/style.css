@@ -5,3 +5,17 @@
     align-items: center;
     justify-content: center;
 }
+
+.addLectionDesktop{
+    height: 100vh;
+    padding: 50px 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.addLectionMobile{
+    height: 100vh;
+    padding: 25px 25px;
+    align-items: center;
+    justify-content: center;
+}

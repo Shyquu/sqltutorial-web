@@ -1,14 +1,14 @@
 {
-  "homepage": "https://shyquu.github.io/sqltutorial-web",
+  "homepage": "https://shyquu.github.io/sqltutorial-web/",
   "name": "sqlproject",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deplox": "gh-pages -d build",
     "build": "tsc && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

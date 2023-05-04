@@ -6,7 +6,6 @@ import {
     RouterProvider,
 } from "react-router-dom"
 import {AddTask} from "./components/AddTask";
-import {Test} from "./components/Test";
 import AddLection from "./components/AddLection";
 import "./style.css"
 
@@ -16,7 +15,7 @@ const router = createBrowserRouter([
         element: (
             <div>
                 <Accordion defaultActiveKey={"0"}>
-                    <Accordion.Item eventkey={"0"}>
+                    <Accordion.Item eventKey={"0"}>
                         <Accordion.Header>Aufgabe 1</Accordion.Header>
                         <Accordion.Body>
                             <TaskBox task={"Gib alle Daten der Tabelle 'cia' aus."}/>
